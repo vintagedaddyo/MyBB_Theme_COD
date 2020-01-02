@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<theme name="COD" version="1821">
+<theme name="COD" version="1822">
 	<properties>
-		<templateset><![CDATA[13]]></templateset>
+		<templateset><![CDATA[10]]></templateset>
 		<editortheme><![CDATA[buttons-dark.css]]></editortheme>
 		<imgdir><![CDATA[themes/cod]]></imgdir>
 		<logo><![CDATA[themes/cod/logo.png]]></logo>
@@ -11,7 +11,7 @@
 		<disporder><![CDATA[a:7:{s:10:"global.css";i:1;s:8:"css3.css";i:2;s:9:"modcp.css";i:3;s:10:"usercp.css";i:4;s:17:"thread_status.css";i:5;s:16:"star_ratings.css";i:6;s:14:"showthread.css";i:7;}]]></disporder>
 	</properties>
 	<stylesheets>
-		<stylesheet name="modcp.css" attachedto="modcp.php" version="1821"><![CDATA[/*
+		<stylesheet name="modcp.css" attachedto="modcp.php" version="1822"><![CDATA[/*
  * MyBB: COD Frontend Theme 
  *
  * File: modcp.css
@@ -108,9 +108,10 @@
 
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="css3.css" version="1821"><![CDATA[/*
+		<stylesheet name="css3.css" version="1822"><![CDATA[/*
  * MyBB: COD Frontend Theme 
  *
  * File: css3.css
@@ -248,9 +249,10 @@ a.button {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="global.css" version="1821"><![CDATA[/*
+		<stylesheet name="global.css" version="1822"><![CDATA[/*
  * MyBB: COD Frontend Theme 
  *
  * File: global.css
@@ -2543,9 +2545,10 @@ div.jqi .jqisubstate .jqibuttons button {
 /* END: Custom Scrollbar */			
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1821"><![CDATA[/*
+		<stylesheet name="usercp.css" attachedto="usercp.php|usercp2.php|private.php" version="1822"><![CDATA[/*
  * MyBB: COD Frontend Theme 
  *
  * File: usercp.css
@@ -2732,9 +2735,10 @@ td[class^=trow]{
 
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1821"><![CDATA[	/*
+		<stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1822"><![CDATA[	/*
  * MyBB: COD Frontend Theme 
  *
  * File: thread_status.css
@@ -3093,9 +3097,10 @@ td[class^=trow]{
     border: #333 1px solid;
 }
       	
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1821"><![CDATA[/*
+		<stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1822"><![CDATA[/*
  * MyBB: COD Frontend Theme 
  *
  * File: star_rating.css
@@ -3205,9 +3210,10 @@ td .star_rating {
 		
 		
 		
+		
 		]]>
 		</stylesheet>
-		<stylesheet name="showthread.css" attachedto="showthread.php" version="1821"><![CDATA[/*
+		<stylesheet name="showthread.css" attachedto="showthread.php" version="1822"><![CDATA[/*
  * MyBB: COD Frontend Theme 
  *
  * File: showthread.css
@@ -3337,6 +3343,7 @@ ul.thread_tools li.poll:after {
 	padding: 20px;
 	width: 100%;
 }		
+		
 		
 		
 		
@@ -3535,10 +3542,10 @@ ul.thread_tools li.poll:after {
 		<template name="header_menu_memberlist" version="1807"><![CDATA[<li><a href="{$mybb->settings['bburl']}/memberlist.php" class="memberlist"><i class="fa fa-users toplinks-memberlist"></i>{$lang->toplinks_memberlist}</a></li>]]></template>
 		<template name="header_menu_portal" version="1807"><![CDATA[<li><a href="{$mybb->settings['bburl']}/portal.php" class="portal"><i class="fa fa-bell toplinks-portal"></i>{$lang->toplinks_portal}</a></li>]]></template>
 		<template name="header_menu_search" version="1807"><![CDATA[<li><a href="{$mybb->settings['bburl']}/search.php" class="search"><i class="fa fa-search toplinks-search"></i>{$lang->toplinks_search}</a></li>]]></template>
-		<template name="header_quicksearch" version="1807"><![CDATA[<form action="{$mybb->settings['bburl']}/search.php" method="post">
+		<template name="header_quicksearch" version="1822"><![CDATA[						<form action="{$mybb->settings['bburl']}/search.php">
 						<fieldset id="search">
-                            <input name="keywords" type="text" class="textbox" placeholder="Search..." />
-                            <i class="fa fa-search search_icon"></i><input value="" type="submit" class="search_icon" />
+						    <input name="keywords" type="text" class="textbox" placeholder="Search..." />							
+                            <i class="fa fa-search search_icon"></i><input value="" type="submit" class="search_icon" />							
 							<input type="hidden" name="action" value="do_search" />
 							<input type="hidden" name="postthread" value="1" />
 						</fieldset>
@@ -3901,7 +3908,7 @@ lang.click_mark_read = "{$lang->click_mark_read}";
   </tbody>
 </table>
 <br />]]></template>
-		<template name="portal_search" version="1811"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+		<template name="portal_search" version="1822"><![CDATA[<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
   <tr>
     <td class="thead"><strong><i class="fa fa-search"></i>&nbsp;{$lang->search_forums}</strong>
       <div class="expcolimage"><img src="{$theme['imgdir']}/collapse.png" id="sidebar_ex8_img" class="expander" alt="[-]" title="[-]" /></div></td>
@@ -3909,7 +3916,7 @@ lang.click_mark_read = "{$lang->click_mark_read}";
   <tbody style="{$collapsed['sidebar_ex8_e']}" id="sidebar_ex8_e">
 <tr>
 <td class="trow1" align="center">
-<form method="post" action="{$mybb->settings['bburl']}/search.php">
+<form action="{$mybb->settings['bburl']}/search.php">
 <input type="hidden" name="action" value="do_search" />
 <input type="hidden" name="postthread" value="1" />
 <input type="hidden" name="forums" value="all" />
@@ -3920,7 +3927,7 @@ lang.click_mark_read = "{$lang->click_mark_read}";
 <span class="smalltext">
 (<a href="{$mybb->settings['bburl']}/search.php">{$lang->advanced_search}</a>)
 </span>
-</tbody>
+</tbody>	
 </td>
 </tr>
 </table>
